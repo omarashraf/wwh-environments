@@ -1,0 +1,24 @@
+{
+  "name": "wwh-environments",
+  "version": "1.0.0",
+  "description": "A schedule for the environments being used in the WWH project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarashraf/wwh-environments.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omarashraf/wwh-environments/issues"
+  },
+  "homepage": "https://github.com/omarashraf/wwh-environments#readme",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14"
+  }
+}
