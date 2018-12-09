@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 
 const users = require('./routes/users');
 const auth = require('./routes/auth');
+const environments = require('./routes/environments');
 
 // connection to mlab's db
 mongoose.connect(`mongodb://${env.parsed['USER']}:${env.parsed['PASSWORD']}@${env.parsed['DB']}`, { useNewUrlParser: true });
@@ -32,6 +33,9 @@ app.use('/api/users', users);
 
 // auth router
 app.use('/api/auth', auth);
+
+// environments router
+app.use('/api/environments', environments);
 
 // port setting for app to run
 const port = env.parsed['PORT'] || 3000;
